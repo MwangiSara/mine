@@ -217,7 +217,21 @@
                                 <div class="skill-image"><a href="https://leetcode.com/MwangiSarah/" target="_blank" rel="noreferrer" title="leetcode"> <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="leet-code" width="40" height="40"/> </a> </div>
                                 
                         </div>
-                        <form id="contact" action="#" method="post">
+                        <script>
+                            function sendEmail() {
+                                Email.send({
+                                    Host : "smtp.mailslurp.com",
+                                    Username : "<mailslurp username>",
+                                    Password : "<mailslurp password>",
+                                    To : 'mwangisarah113@gmail.com',
+                                    From : "email",
+                                    Subject : "Test email",
+                                    Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+                                }).then(message => alert(message)
+                                );
+                                }
+                        </script>
+                        <form id="contact" action="mailto:mwangisarah113@gmail.com" method="post">
                             <div class="row">
                                 <div class="col-md-12">
                                   <fieldset>
@@ -241,7 +255,7 @@
                                 </div>
                                 <div class="col-md-12">
                                   <fieldset>
-                                    <button type="submit" id="form-submit" class="btn">Send Now</button>
+                                    <button type="submit" name="submit" id="form-submit" class="btn" onclick="sendEmail()>Send Now</button>
                                   </fieldset>
                                 </div>
                             </div>
