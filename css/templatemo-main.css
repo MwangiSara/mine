@@ -770,6 +770,21 @@ nav a:hover::before {
 	border-radius: 0px;
 	transition: all 0.5s;
 }
+.fifth-content .ahref {
+	max-width: 100%;
+	width: 100%;
+    display: inline-block;
+	border: 2px solid #fff;
+	padding: 8px 15px;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	text-decoration: none;
+	background-color: transparent;
+	border-radius: 0px;
+	transition: all 0.5s;
+}
 .fifth-content h2 {
 	font-size: 24px;
 	text-transform: uppercase;
@@ -788,7 +803,10 @@ nav a:hover::before {
 	color: #232323;
 	background-color: #fff;
 }
-
+.fifth-content .ahref:hover {
+	color: #232323;
+	background-color: #fff;
+}
 .fifth-content .flex-container {
 	display: flex;
 	flex-wrap: wrap;
